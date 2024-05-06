@@ -48,4 +48,5 @@ public class CandidateController {
     public void eliminar(@PathVariable("id") Integer id) {
         service.eliminar(id);
     }
+
 }
