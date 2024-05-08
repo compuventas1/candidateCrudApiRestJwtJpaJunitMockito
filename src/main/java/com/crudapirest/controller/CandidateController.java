@@ -34,7 +34,7 @@ public class CandidateController {
         return service.registrar(candidate);
     }
 
-    @GetMapping("obtenerPorId/{id}")
+    @GetMapping("/obtenerPorId/{id}")
     public Optional<Candidate> obtenerPorId(@PathVariable("id") int id) {
         return service.obtenerPorId(id);
     }
@@ -44,7 +44,7 @@ public class CandidateController {
         return service.modificar(candidate);
     }
 
-    @DeleteMapping("eliminar/{id}")
+    @DeleteMapping("/eliminar/{id}")
     public void eliminar(@PathVariable("id") Integer id) {
         service.eliminar(id);
     }
